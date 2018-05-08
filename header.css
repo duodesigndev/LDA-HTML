@@ -1,0 +1,15 @@
+header {
+  display: grid;
+  grid-column-end: span 10;
+  grid-template-columns: min-content 1fr;
+  grid-template-areas:
+    'logo main-menu';
+}
+
+header .logo {
+  grid-area: logo;
+}
+
+header .main-menu {
+  grid-area: main-menu;
+}

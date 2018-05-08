@@ -1,0 +1,26 @@
+html {
+    box-sizing: border-box;
+}
+
+/**
+*
+* HELPERS
+*
+**/
+
+.wrapper {
+    display: grid;
+    grid-gap: var(--gap);
+    grid-template-columns: auto repeat(12, minmax(auto, 6rem)) auto;
+    grid-template-areas:
+    ". . inner inner inner inner inner inner inner inner inner inner . .";
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper > .inner {
+    grid-area: inner;
+    display: grid;
+    grid-gap: var(--gap);
+    grid-template-columns: repeat(10, 1fr);
+}
