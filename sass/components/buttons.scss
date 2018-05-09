@@ -1,0 +1,27 @@
+.btn {
+  border: none;
+  display: inline-block;
+  padding: calc(var(--gap) / 2) calc(var(--gap) * 2);
+  text-align: center;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &.btn-w100 {
+    width: 100%;
+  }
+
+  &.btn-primary {
+    background-color: var(--color-yellow);
+    color: var(--color-primary);
+  }
+  &.btn-secondary {
+    background-color: var(--color-red);
+    color: var(--color-white);
+  }
+  &.btn-outline {
+    color: var(--color);
+    box-shadow: inset 0 0 0 1px var(--color);
+  }
+
+}

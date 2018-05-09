@@ -1,0 +1,23 @@
+:root {
+  /*! = gap
+  -------------------------------------------------------------- */
+  --gap: 1.25rem;
+  /*! = typography
+  -------------------------------------------------------------- */
+  --font-light:     200;
+  --font-regular:   400;
+  --font-bold:      700;
+  --font-black:     900;
+  --font-primary:   'Raleway', sans-serif;
+  --font-secondary: 'Caveat', cursive;
+  /*! = theme color
+  -------------------------------------------------------------- */
+  --color-red:      rgba(231,29,54,1);
+  --color-yellow:   rgba(249,190,58,1);
+  --color-primary:  rgba(1,22,39,1);
+  --color-secondary:rgba(130,129,129,1);
+  --color-white:    rgba(255,255,255,1);
+  --color-black:    rgba(0,0,0,1);
+  /*! = break points
+  -------------------------------------------------------------- */
+  --app-width: 1360px; }

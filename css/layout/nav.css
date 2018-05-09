@@ -1,0 +1,19 @@
+/*! = <nav>
+-------------------------------------------------------------- */
+nav ul {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end; }
+  nav ul li:not(:first-child) {
+    margin-left: var(--gap); }
+
+/*! = <nav class="social-media-menu">
+-------------------------------------------------------------- */
+nav.social-media-menu {
+  grid-row-start: 1;
+  z-index: 1; }
+  nav.social-media-menu ul {
+    grid-column-end: span 10; }
+
+/*! = <nav class="main-menu">
+-------------------------------------------------------------- */

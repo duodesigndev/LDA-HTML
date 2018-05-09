@@ -1,0 +1,21 @@
+figure {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%; }
+  figure.overlay::after {
+    background-color: var(--color-primary);
+    content: '';
+    height: 100%;
+    opacity: .85;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1; }
+  figure img {
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -2; }

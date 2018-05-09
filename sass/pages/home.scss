@@ -1,0 +1,26 @@
+.section-main {
+  grid-row: 1 / 4;
+  min-height: 100vh;
+  height: 100vh;
+  max-height: 100vh;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+
+  h6 {
+    display: grid;
+    align-items: center;
+    grid-template-columns: min-content max-content;
+    grid-column-gap: calc(var(--gap) /2 );
+  }
+
+}
+
+
+.section-one {
+
+  button {
+    grid-column-end: span 5;
+  }
+
+}

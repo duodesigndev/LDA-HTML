@@ -1,0 +1,10 @@
+header {
+  grid-row-start: 2;
+  z-index: 1; }
+  header .logo {
+    grid-column: span 3; }
+  header .main-menu {
+    align-items: center;
+    display: grid;
+    grid-column: span 7;
+    justify-content: end; }

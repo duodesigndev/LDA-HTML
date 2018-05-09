@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DuoDevDesign</title>
+    <title>LDA</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Caveat:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./variables.css">
-    <link rel="stylesheet" href="./typography.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./nav.css">
-    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./css/abstract/reset.css">
+    <link rel="stylesheet" href="./css/abstract/variables.css">
+    <link rel="stylesheet" href="./css/abstract/typography.css">
+    <link rel="stylesheet" href="./css/abstract/theme.css">
+    <link rel="stylesheet" href="./css/components/buttons.css">
+    <link rel="stylesheet" href="./css/components/figure.css">
+    <link rel="stylesheet" href="./css/layout/nav.css">
+    <link rel="stylesheet" href="./css/layout/header.css">
+    <link rel="stylesheet" href="./css/pages/home.css">
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
     <script defer src="./index.js" ></script>
@@ -25,31 +28,28 @@
     <!-- Main Container -->
     <div class="main-container">
 
-        <div class="wrapper">
-            <div class="inner">
-
-                <!-- Social Media Menu -->
-                <nav class="social-media-menu">
+        <!-- Social Media Menu -->
+        <nav class="social-media-menu">
+            <div class="wrapper">
+                <div class="inner">
                     <ul>
-                        <li><a href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
-                        <li><a href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
-                        <li><a href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
-                        <li><a href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
-                        <li><a href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
-                        <li><a href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
-                        <li><a href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
-                        <li><a href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
+                        <li><a class="red" href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
+                        <li><a class="red" href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
+                        <li><a class="red" href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
+                        <li><a class="red" href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
+                        <li><a class="red" href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
+                        <li><a class="red" href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
+                        <li><a class="red" href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
+                        <li><a class="red" href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
                     </ul>
-                </nav>
+                </div>
             </div>
-        </div>
+        </nav>
 
-
-        <div class="wrapper">
-            <div class="inner">
-
-                <!-- Header -->
-                <header>
+        <!-- Header -->
+        <header>
+            <div class="wrapper">
+                <div class="inner">
 
                     <!-- Logo -->
                     <a class="logo">
@@ -59,18 +59,38 @@
                     <!-- Main Menu -->
                     <nav class="main-menu">
                         <ul>
-                            <li><a href="javascript: void(0);">About</a></li>
-                            <li><a href="javascript: void(0);">Students</a></li>
-                            <li><a href="javascript: void(0);">Classes</a></li>
-                            <li><a href="javascript: void(0);">Timetable</a></li>
-                            <li><a href="javascript: void(0);">Prices</a></li>
-                            <li><a href="javascript: void(0);">Beyond Classes</a></li>
-                            <li><a href="javascript: void(0);">Contact</a></li>
+                            <li><a class="lighter" href="javascript: void(0);">About</a></li>
+                            <li><a class="lighter" href="javascript: void(0);">Students</a></li>
+                            <li><a class="lighter" href="javascript: void(0);">Classes</a></li>
+                            <li><a class="lighter" href="javascript: void(0);">Timetable</a></li>
+                            <li><a class="lighter" href="javascript: void(0);">Prices</a></li>
+                            <li><a class="lighter" href="javascript: void(0);">Beyond Classes</a></li>
+                            <li><a class="lighter" href="javascript: void(0);">Contact</a></li>
                         </ul>
                     </nav>
-                </header>
+                </div>
             </div>
-        </div>
+        </header>
+
+        <section class="section-main">
+            <figure class="overlay">
+                <img src="http://www.dancemambo.com.au/images/jan_becky.jpg" alt="Alt">
+            </figure>
+            <h1 class="uppercase font-light lighter">Feels Like</h1>
+            <h1 class="bigger font-secondary font-black lighter">Dancing at home</h1>
+            <div class="divider"></div>
+            <h6 class="font-bold lighter"><i class="fas fa-caret-right fa-2x yellow"></i> watch our video</h6>
+
+        </section>
+
+        <section class="section-one">
+            <div class="wrapper">
+                <div class="inner">
+                    <button class="btn btn-secondary btn-w100 uppercase" action="enrol">Enrol now</button>
+                    <button class="btn btn-primary btn-w100 uppercase" action="free-trial">Free week trial</button>
+                </div>
+            </div>
+        </section>
 
     </div>
 
