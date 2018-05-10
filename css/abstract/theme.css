@@ -1,15 +1,14 @@
-.main-container {
+body {
   display: grid; }
-  .main-container > * {
+  body > * {
     grid-column: 1 / 2; }
 
 .wrapper {
   display: grid;
   grid-gap: var(--gap);
-  grid-template-columns: auto repeat(12, minmax(auto, 6rem)) auto;
-  grid-template-areas: ". . inner inner inner inner inner inner inner inner inner inner . ."; }
-  .wrapper .inner {
-    grid-area: inner;
-    display: grid;
-    grid-gap: var(--gap);
-    grid-template-columns: repeat(10, 1fr); }
+  grid-template-columns: minmax(15px, auto) repeat(12, var(--app-width)) minmax(15px, auto); }
+  .wrapper > .inner {
+    display: inherit;
+    grid-column: 3 / 13;
+    grid-gap: inherit;
+    grid-template-columns: repeat(12, 1fr); }

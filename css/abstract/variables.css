@@ -20,4 +20,4 @@
   --color-black:    rgba(0,0,0,1);
   /*! = break points
   -------------------------------------------------------------- */
-  --app-width: 1360px; }
+  --app-width: minmax(auto, 6rem); }

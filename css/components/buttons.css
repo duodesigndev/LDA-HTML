@@ -8,6 +8,8 @@
   white-space: nowrap; }
   .btn.btn-w100 {
     width: 100%; }
+  .btn.btn-lg {
+    padding: calc(var(--gap) * 2) calc(var(--gap) * 2); }
   .btn.btn-primary {
     background-color: var(--color-yellow);
     color: var(--color-primary); }

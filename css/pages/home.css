@@ -1,16 +1,25 @@
-.section-main {
-  grid-row: 1 / 4;
-  min-height: 100vh;
-  height: 100vh;
-  max-height: 100vh;
-  display: grid;
+.section {
+  padding: calc(var(--gap) * 4) 0; }
+
+#section-main {
   align-content: center;
-  justify-items: center; }
-  .section-main h6 {
+  display: grid;
+  justify-items: center;
+  height: 100vh; }
+  #section-main h6 {
     display: grid;
     align-items: center;
     grid-template-columns: min-content max-content;
     grid-column-gap: calc(var(--gap) /2); }
 
-.section-one button {
+#section-one {
+  transform: translateY(-50%); }
+  #section-one button {
+    grid-column-end: span 6; }
+
+#section-two .inner > * {
   grid-column-end: span 5; }
+
+#section-two .content {
+  display: grid;
+  grid-gap: var(--gap); }

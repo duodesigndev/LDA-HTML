@@ -1,0 +1,14 @@
+*.bg-red {
+  background-color: var(--color-red); }
+
+*.bg-yellow {
+  background-color: var(--color-yellow); }
+
+.r-1 {
+  grid-row-start: 1; }
+
+.r-2 {
+  grid-row-start: 2; }
+
+.r-1-4 {
+  grid-row: 1 / 4; }

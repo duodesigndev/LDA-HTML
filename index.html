@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="./css/abstract/reset.css">
     <link rel="stylesheet" href="./css/abstract/variables.css">
+    <link rel="stylesheet" href="./css/abstract/helpers.css">
     <link rel="stylesheet" href="./css/abstract/typography.css">
     <link rel="stylesheet" href="./css/abstract/theme.css">
     <link rel="stylesheet" href="./css/components/buttons.css">
@@ -24,55 +25,48 @@
 
 </head>
 <body>
-
-    <!-- Main Container -->
-    <div class="main-container">
-
         <!-- Social Media Menu -->
-        <nav class="social-media-menu">
-            <div class="wrapper">
-                <div class="inner">
-                    <ul>
-                        <li><a class="red" href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
-                        <li><a class="red" href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
-                        <li><a class="red" href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
-                        <li><a class="red" href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
-                        <li><a class="red" href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
-                        <li><a class="red" href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
-                        <li><a class="red" href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
-                        <li><a class="red" href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
-                    </ul>
-                </div>
+        <nav id="social-media-menu" class="wrapper r-1">
+            <div class="inner">
+                <ul>
+                    <li><a class="red" href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
+                    <li><a class="red" href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
+                    <li><a class="red" href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
+                    <li><a class="red" href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
+                    <li><a class="red" href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
+                    <li><a class="red" href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
+                    <li><a class="red" href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
+                    <li><a class="red" href="javascript: void(0);"><i class="fab fa-youtube"></i></a></li>
+                </ul>
             </div>
         </nav>
 
+
         <!-- Header -->
-        <header>
-            <div class="wrapper">
-                <div class="inner">
+        <header class="wrapper r-2">
+            <div class="inner">
 
-                    <!-- Logo -->
-                    <a class="logo">
-                        <img src="./images/logo.png" />
-                    </a>
+                <!-- Logo -->
+                <a id="logo" class="logo">
+                    <img src="./images/logo.png" />
+                </a>
 
-                    <!-- Main Menu -->
-                    <nav class="main-menu">
-                        <ul>
-                            <li><a class="lighter" href="javascript: void(0);">About</a></li>
-                            <li><a class="lighter" href="javascript: void(0);">Students</a></li>
-                            <li><a class="lighter" href="javascript: void(0);">Classes</a></li>
-                            <li><a class="lighter" href="javascript: void(0);">Timetable</a></li>
-                            <li><a class="lighter" href="javascript: void(0);">Prices</a></li>
-                            <li><a class="lighter" href="javascript: void(0);">Beyond Classes</a></li>
-                            <li><a class="lighter" href="javascript: void(0);">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
+                <!-- Main Menu -->
+                <nav id="main-menu" class="main-menu">
+                    <ul>
+                        <li><a class="lighter" href="javascript: void(0);">About</a></li>
+                        <li><a class="lighter" href="javascript: void(0);">Students</a></li>
+                        <li><a class="lighter" href="javascript: void(0);">Classes</a></li>
+                        <li><a class="lighter" href="javascript: void(0);">Timetable</a></li>
+                        <li><a class="lighter" href="javascript: void(0);">Prices</a></li>
+                        <li><a class="lighter" href="javascript: void(0);">Beyond Classes</a></li>
+                        <li><a class="lighter" href="javascript: void(0);">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
 
-        <section class="section-main">
+        <section id="section-main" class="r-1-4">
             <figure class="overlay">
                 <img src="http://www.dancemambo.com.au/images/jan_becky.jpg" alt="Alt">
             </figure>
@@ -80,19 +74,40 @@
             <h1 class="bigger font-secondary font-black lighter">Dancing at home</h1>
             <div class="divider"></div>
             <h6 class="font-bold lighter"><i class="fas fa-caret-right fa-2x yellow"></i> watch our video</h6>
-
         </section>
 
-        <section class="section-one">
-            <div class="wrapper">
-                <div class="inner">
-                    <button class="btn btn-secondary btn-w100 uppercase" action="enrol">Enrol now</button>
-                    <button class="btn btn-primary btn-w100 uppercase" action="free-trial">Free week trial</button>
-                </div>
+        <section id="section-one" class="wrapper">
+            <div class="inner">
+                <button class="btn btn-lg btn-secondary btn-w100 uppercase" action="enrol"><i class="far fa-star"></i> Enrol now</button>
+                <button class="btn btn-lg btn-primary btn-w100 uppercase" action="free-trial"><i class="fas fa-gift"></i> Free week trial</button>
             </div>
         </section>
 
-    </div>
+        <section id="section-two" class="wrapper section">
+            <div class="inner">
+                <div class="content">
+                    <h1 class="uppercase">Latin dance <b class="font-black">classes</b> in Sydney</h1>
+                    <h1 class="red font-secondary">Lorem ipsum</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut eligendi, deleniti, voluptas voluptatibus, facere ea quas minus inventore veritatis fuga ducimus illum odit esse perferendis. Quisquam id dignissimos illum quia.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut eligendi, deleniti, voluptas voluptatibus, facere ea quas minus inventore veritatis fuga ducimus illum odit esse perferendis. Quisquam id dignissimos illum quia.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut eligendi, deleniti, voluptas voluptatibus, facere ea quas minus inventore veritatis fuga ducimus illum odit esse perferendis. Quisquam id dignissimos illum quia.</p>
+                </div>
+                <picture>
+                    <img src="" alt="" srcset="">
+                </picture>
+            </div>
+        </section>
+
+        <section id="section-three" class="wrapper section bg-red">
+            <div class="inner">
+                <div class="content">
+                    <h1 class="uppercase">Next <b class="font-black">events</b></h1>
+                </div>
+                <picture>
+                    <img src="" alt="" srcset="">
+                </picture>
+            </div>
+        </section>
 
 </body>
 </html>

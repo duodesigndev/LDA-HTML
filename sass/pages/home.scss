@@ -1,11 +1,12 @@
-.section-main {
-  grid-row: 1 / 4;
-  min-height: 100vh;
-  height: 100vh;
-  max-height: 100vh;
-  display: grid;
+.section {
+  padding: calc(var(--gap) * 4) 0;
+}
+
+#section-main {
   align-content: center;
+  display: grid;
   justify-items: center;
+  height: 100vh;
 
   h6 {
     display: grid;
@@ -17,10 +18,20 @@
 }
 
 
-.section-one {
-
+#section-one {
+  transform: translateY(-50%);
   button {
-    grid-column-end: span 5;
+    grid-column-end: span 6;
   }
 
+}
+
+#section-two {
+  .inner > * {
+    grid-column-end: span 5;
+  }
+  .content {
+    display: grid;
+    grid-gap: var(--gap);
+  }
 }

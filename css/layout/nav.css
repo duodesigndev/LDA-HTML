@@ -9,11 +9,8 @@ nav ul {
 
 /*! = <nav class="social-media-menu">
 -------------------------------------------------------------- */
-nav.social-media-menu {
-  grid-row-start: 1;
-  z-index: 1; }
-  nav.social-media-menu ul {
-    grid-column-end: span 10; }
+nav#social-media-menu ul {
+  grid-column-end: span 12; }
 
 /*! = <nav class="main-menu">
 -------------------------------------------------------------- */
