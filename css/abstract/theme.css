@@ -11,4 +11,4 @@ body {
     display: inherit;
     grid-column: 3 / 13;
     grid-gap: inherit;
-    grid-template-columns: repeat(12, 1fr); }
+    grid-template-columns: repeat(10, 1fr); }

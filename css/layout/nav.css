@@ -10,7 +10,9 @@ nav ul {
 /*! = <nav class="social-media-menu">
 -------------------------------------------------------------- */
 nav#social-media-menu ul {
-  grid-column-end: span 12; }
+  grid-column-end: span 10; }
 
 /*! = <nav class="main-menu">
 -------------------------------------------------------------- */
+nav#main-menu ul li:hover {
+  box-shadow: 0 4px 0 0 var(--color-yellow); }

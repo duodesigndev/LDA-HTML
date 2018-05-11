@@ -5,7 +5,8 @@
   align-content: center;
   display: grid;
   justify-items: center;
-  height: 100vh; }
+  height: 100vh;
+  position: relative; }
   #section-main h6 {
     display: grid;
     align-items: center;
@@ -15,7 +16,7 @@
 #section-one {
   transform: translateY(-50%); }
   #section-one button {
-    grid-column-end: span 6; }
+    grid-column-end: span 5; }
 
 #section-two .inner > * {
   grid-column-end: span 5; }
@@ -23,3 +24,37 @@
 #section-two .content {
   display: grid;
   grid-gap: var(--gap); }
+
+#section-three .inner {
+  grid-row-gap: calc(var(--gap) * 2); }
+  #section-three .inner > * {
+    grid-column-end: span 10; }
+
+#section-three .card {
+  grid-column-end: span 2; }
+
+#section-three .main-card {
+  grid-column-end: span 4; }
+
+#section-four .inner {
+  grid-row-gap: calc(var(--gap) * 2); }
+  #section-four .inner > * {
+    grid-column-end: span 10; }
+  #section-four .inner .main-video {
+    position: relative;
+    padding: 20% 0;
+    display: grid;
+    grid-gap: calc(var(--gap) / 1);
+    align-content: center;
+    justify-items: center; }
+  #section-four .inner .main-video-description {
+    grid-column-end: span 5; }
+  #section-four .inner .video-1 {
+    grid-column-start: 7; }
+  #section-four .inner .video {
+    grid-column-end: span 2;
+    position: relative;
+    display: grid;
+    padding: 15% 0;
+    align-content: center;
+    justify-items: center; }

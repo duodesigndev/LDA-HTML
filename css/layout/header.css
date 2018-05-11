@@ -1,8 +1,9 @@
-header #logo {
-  grid-column-end: span 3; }
-
-header #main-menu {
-  align-items: center;
-  display: grid;
-  grid-column: auto / span 9;
-  justify-content: end; }
+header {
+  z-index: 2; }
+  header #logo {
+    grid-column-end: span 3; }
+  header #main-menu {
+    align-items: center;
+    display: grid;
+    grid-column: auto / span 7;
+    justify-content: end; }

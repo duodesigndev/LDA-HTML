@@ -1,0 +1,35 @@
+.card {
+  background: var(--color-white);
+  display: grid;
+  grid-template-areas: 'header' 'body' 'footer';
+  z-index: 1; }
+  .card .header {
+    grid-area: header;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: var(--gap) calc(var(--gap) * 2);
+    position: relative; }
+  .card .body {
+    display: grid;
+    grid-area: body;
+    grid-gap: calc(var(--gap) * 2);
+    grid-template-columns: repeat(2, 1fr);
+    padding: calc(var(--gap) * 2); }
+    .card .body > * {
+      grid-column-end: span 2; }
+  .card .footer {
+    grid-area: footer; }
+  .card.main-card .header {
+    justify-content: start; }
+    .card.main-card .header > h1 {
+      position: relative; }
+      .card.main-card .header > h1::before {
+        background: var(--color-yellow);
+        content: '';
+        height: calc(var(--gap) / 1);
+        position: absolute;
+        transform: translateY(-150%);
+        width: 100%; }
+  .card.main-card .body > :not(:first-child) {
+    grid-column-end: span 1; }

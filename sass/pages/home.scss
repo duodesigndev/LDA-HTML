@@ -7,6 +7,7 @@
   display: grid;
   justify-items: center;
   height: 100vh;
+  position: relative;
 
   h6 {
     display: grid;
@@ -15,13 +16,17 @@
     grid-column-gap: calc(var(--gap) /2 );
   }
 
+  .divider {
+
+  }
+
 }
 
 
 #section-one {
   transform: translateY(-50%);
   button {
-    grid-column-end: span 6;
+    grid-column-end: span 5;
   }
 
 }
@@ -33,5 +38,52 @@
   .content {
     display: grid;
     grid-gap: var(--gap);
+  }
+}
+
+#section-three {
+  .inner {
+    grid-row-gap: calc(var(--gap) * 2);
+    > * {
+      grid-column-end: span 10;
+    }
+  }
+
+  .card {
+    grid-column-end: span 2;
+  }
+  .main-card {
+    grid-column-end: span 4;
+  }
+}
+
+#section-four {
+  .inner {
+    grid-row-gap: calc(var(--gap) * 2);
+    > * {
+      grid-column-end: span 10;
+    }
+    .main-video{
+      position: relative;
+      padding: 20% 0;
+      display: grid;
+      grid-gap: calc(var(--gap) / 1);
+      align-content: center;
+      justify-items: center;
+    }
+    .main-video-description {
+      grid-column-end: span 5;
+    }
+    .video-1 {
+      grid-column-start: 7;
+    }
+    .video {
+      grid-column-end: span 2;
+      position: relative;
+      display: grid;
+      padding: 15% 0;
+      align-content: center;
+      justify-items: center;
+    }
   }
 }

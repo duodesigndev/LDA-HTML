@@ -1,21 +1,20 @@
 figure {
-  position: absolute;
-  top: 0;
   height: 100%;
+  position: absolute;
   width: 100%; }
   figure.overlay::after {
     background-color: var(--color-primary);
     content: '';
-    height: 100%;
+    height: inherit;
     opacity: .85;
     position: absolute;
     top: 0;
-    width: 100%;
+    width: inherit;
     z-index: -1; }
   figure img {
-    height: 100%;
+    height: inherit;
     object-fit: cover;
     position: absolute;
     top: 0;
-    width: 100%;
+    width: inherit;
     z-index: -2; }

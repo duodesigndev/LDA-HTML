@@ -1,11 +1,12 @@
 header {
+  z-index: 2;
   #logo {
     grid-column-end: span 3;
   }
   #main-menu {
     align-items: center;
     display: grid;
-    grid-column: auto / span 9;
+    grid-column: auto / span 7;
     justify-content: end;
   }
 }
