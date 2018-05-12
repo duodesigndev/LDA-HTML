@@ -24,8 +24,7 @@
   font-size: 100%;
   letter-spacing: 1pt; }
   *.font-secondary, html.font-secondary, body.font-secondary {
-    font-family: var(--font-secondary);
-    letter-spacing: 5pt; }
+    font-family: var(--font-secondary); }
   *.uppercase, html.uppercase, body.uppercase {
     text-transform: uppercase; }
   *.font-light, html.font-light, body.font-light {
@@ -66,10 +65,13 @@ h6 {
   color: var(--color-primary);
   line-height: 100%; }
 
+h1, h2, h3, h4 {
+  letter-spacing: 4.2pt; }
+
 h1 {
   font-size: 4rem; }
   h1.bigger {
-    font-size: 4.5rem; }
+    font-size: 5.75rem; }
 
 h2 {
   font-size: 3.375rem; }

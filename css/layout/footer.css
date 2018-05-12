@@ -1,0 +1,2 @@
+#footer .inner > * {
+  grid-column-end: span 10; }

@@ -1,11 +1,13 @@
 .btn {
   border: none;
   display: inline-block;
-  padding: calc(var(--gap) / 2) calc(var(--gap) * 2);
+  font-weight: var(--font-bold);
+  padding: calc(var(--gap) / 1) calc(var(--gap) * 2);
   text-align: center;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+  width: max-content;
 
   &.btn-w100 {
     width: 100%;

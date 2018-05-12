@@ -27,7 +27,6 @@
 
   &.font-secondary {
     font-family: var(--font-secondary);
-    letter-spacing: 5pt;
   }
 
   &.uppercase {
@@ -88,10 +87,11 @@ h6 {
   color: var(--color-primary);
   line-height: 100%;
 }
+h1, h2, h3, h4 { letter-spacing: 4.2pt; }
 h1 {
   font-size: 4rem;
   &.bigger {
-    font-size: 4.5rem;
+    font-size: 5.75rem;
   }
 }
 h2 {

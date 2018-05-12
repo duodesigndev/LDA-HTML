@@ -16,10 +16,6 @@
     grid-column-gap: calc(var(--gap) /2 );
   }
 
-  .divider {
-
-  }
-
 }
 
 
@@ -84,6 +80,54 @@
       padding: 15% 0;
       align-content: center;
       justify-items: center;
+    }
+  }
+}
+
+#section-five {
+  .inner {
+    > * {
+      grid-column-end: span 10;
+    }
+  }
+  .classes-content {
+    grid-column-end: span 4;
+    display: grid;
+    grid-row-gap: var(--gap);
+
+    &:first-child {
+      padding-top: calc(var(--gap) * 3);
+      position: relative;
+
+      &::before {
+        background: var(--color-red);
+        content: '';
+        height: calc(var(--gap) / 1);
+        position: absolute;
+        transform: translateY(-150%);
+        width: calc(var(--gap) * 6);
+      }
+
+    }
+  }
+  .testimonials {
+    grid-column-start: 6;
+    grid-column-end: span 5;
+    position: relative;
+    .testimonial {
+      padding: calc(var(--gap) * 2);
+      display: grid;
+      grid-gap: calc(var(--gap));
+    }
+
+    &::before {
+      background: var(--color-red);
+      content: '';
+      height: 70%;
+      position: absolute;
+      transform: translate(calc(var(--gap) * -1), calc(var(--gap) * -1));
+      width: 70%;
+      z-index: -2;
     }
   }
 }

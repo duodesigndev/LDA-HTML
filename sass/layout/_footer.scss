@@ -1,0 +1,10 @@
+#footer {
+  .inner {
+    .f-col1, .f-col3{
+      grid-column-end: span 3;
+    }
+    .f-col2{
+      grid-column-end: span 4;
+    }
+  }
+}
